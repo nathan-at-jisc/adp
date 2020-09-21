@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1388fd1.chunk.css",
+    "main.js": "/static/js/main.5a490c57.chunk.js",
+    "main.js.map": "/static/js/main.5a490c57.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.89593440.js",
+    "runtime-main.js.map": "/static/js/runtime-main.89593440.js.map",
+    "static/js/2.ca870568.chunk.js": "/static/js/2.ca870568.chunk.js",
+    "static/js/2.ca870568.chunk.js.map": "/static/js/2.ca870568.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.be26cc8c8db16469e915cb993674c56e.js": "/precache-manifest.be26cc8c8db16469e915cb993674c56e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c1388fd1.chunk.css.map": "/static/css/main.c1388fd1.chunk.css.map",
+    "static/js/2.ca870568.chunk.js.LICENSE.txt": "/static/js/2.ca870568.chunk.js.LICENSE.txt",
+    "static/media/adp.png": "/static/media/adp.b304db59.png",
+    "static/media/corona.png": "/static/media/corona.3b6bbbec.png",
+    "static/media/faq.svg": "/static/media/faq.50f9e7b6.svg",
+    "static/media/lowpoly.png": "/static/media/lowpoly.459cb576.png",
+    "static/media/vid_1.mp4": "/static/media/vid_1.de1fdb21.mp4",
+    "static/media/wash_hand.svg": "/static/media/wash_hand.a38d1725.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89593440.js",
+    "static/js/2.ca870568.chunk.js",
+    "static/css/main.c1388fd1.chunk.css",
+    "static/js/main.5a490c57.chunk.js"
+  ]
+}
