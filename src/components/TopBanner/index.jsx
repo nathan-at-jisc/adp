@@ -12,15 +12,15 @@ import CoronaImg from '../../img/corona.png';
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.banner,
-        paddingTop: '0.75rem',
-        paddingBottom: '0.75rem'
+        paddingTop: '1rem',
+        paddingBottom: '1rem'
     },
     container: {
         color: 'white'
     },
     img: {
         position: 'relative',
-        height: '3.5rem'
+        height: '2rem'
     }
 }));
 

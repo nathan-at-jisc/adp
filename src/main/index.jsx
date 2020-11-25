@@ -13,14 +13,18 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
 import HomePage from '../pages/HomePage';
+import CovidPage from '../pages/CovidPage';
+import FAQPage from '../pages/FAQ';
+
 
 const Main = () => (
     <Router>
         <ThemeProvider theme={theme}>
-            <TopBanner />
             <NavBar />
             <Switch>
-                <Route path='/' component={HomePage} />
+                <Route path='/' component={HomePage} exact />
+                <Route path='/covid' component={CovidPage} exact />
+                <Route path='/faq' component={FAQPage} exact />
             </Switch>
             <Footer />
         </ThemeProvider>

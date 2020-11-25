@@ -9,13 +9,13 @@ const theme = createMuiTheme({
             root: {
                 '&:active': {
                     backgroundColor: '#fd6',
-                    color: '#007aaa',
+                    color: '#174992',
                     outline: 'solid #fd6',
                     textDecoration: 'underline'
                 },
                 '&:focus': {
                     backgroundColor: '#fd6',
-                    color: '#007aaa',
+                    color: '#174992',
                     outline: 'solid #fd6',
                     textDecoration: 'none'
                 },
@@ -31,7 +31,7 @@ const theme = createMuiTheme({
                     transition: 'color .2s ease'
                 },
                 border: '0',
-                color: '#007aaa',
+                color: '#174992',
                 textDecoration: 'underline !important'
             }
         },
@@ -72,14 +72,11 @@ const theme = createMuiTheme({
                 }
             },
             h2: {
-                fontSize: '3.6rem',
+                fontSize: '2.5rem',
                 fontWeight: '500',
                 color: '#174992',
-                [breakpoints.up('sm')]: {
-                    fontSize: '2.25rem'
-                },
-                [breakpoints.up('md')]: {
-                    fontSize: '2.5rem'
+                [breakpoints.down('md')]: {
+                    fontSize: '2rem'
                 }
             },
             h3: {
@@ -95,7 +92,7 @@ const theme = createMuiTheme({
             },
             h4: {
                 fontSize: '1.25rem',
-                fontWeight: '200',
+                fontWeight: '300',
                 [breakpoints.up('md')]: {
                     fontSize: '1.5rem'
                 }

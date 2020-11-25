@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Grid, Container } from '@material-ui/core';
+import { makeStyles, Grid, Container, Paper, Hidden } from '@material-ui/core';
 
 const useStyles = ({ backgroundColor, color }) =>
     makeStyles((theme) => ({
@@ -19,7 +19,7 @@ const useStyles = ({ backgroundColor, color }) =>
         }
     }));
 
-const InfoBox = ({ imageUrl, imageAltText, children, backgroundColor, color, imagePosition }) => {
+const InfoBox = ({ imageUrl, imageAltText, children, backgroundColor, color, imagePosition, outline }) => {
 
     const classes = useStyles({ backgroundColor, color })();
 
@@ -27,12 +27,17 @@ const InfoBox = ({ imageUrl, imageAltText, children, backgroundColor, color, ima
         <div className={classes.root}>
             <Container maxWidth='lg'>
                 <Grid container spacing={8} direction={imagePosition === 'right' ? 'row' : 'row-reverse'}>
-                    <Grid item md={12} lg={8} className={classes.marginAuto}>
+                    <Grid item sm={12} md={9} className={classes.marginAuto}>
                         {children}
                     </Grid>
-                    <Grid item lg={4} className={classes.marginAuto}>
-                        <img src={imageUrl} alt={imageAltText} className={classes.image} />
-                    </Grid>
+                    <Hidden only={["xs", "sm"]}>
+                        <Grid item md={3} sm={0}className={classes.marginAuto}>
+                            {outline  ? <Paper style={{padding: '8px 8px 3px 8px'}}elevation={5}>
+                                <img src={imageUrl} alt={imageAltText} className={classes.image} />
+                            </Paper> : <img src={imageUrl} alt={imageAltText} className={classes.image} />
+                            }
+                        </Grid>
+                    </Hidden>
                 </Grid>
             </Container>
         </div>
